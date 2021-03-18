@@ -8,8 +8,8 @@ it("should show fake browser info on load", function() {
   expect(element(by.binding('$location.host()')).getText()).toBe('.rmp.spab.gov.mym');
   expect(element(by.binding('$location.port()')).getText()).toBe('80');
   expect(element(by.binding('$location.path()')).getText()).toBe('/path');
-  expect(element(by.binding('$location.search()')).getText()).toBe('{"a":"b"}');
-  expect(element(by.binding('$location.hash()')).getText()).toBe('h');
+  expect(element(by.binding('$location.search()')).getText()).toBe('{"":""}');
+  expect(element(by.binding('$location.hash()')).getText()).toBe('');
 
 });
 
@@ -37,6 +37,6 @@ it("should change $location accordingly", function() {
   expect(element(by.binding('$location.port()')).getText()).toBe('80');
   expect(element(by.binding('$location.path()')).getText()).toBe('/sec/ond');
   expect(element(by.binding('$location.search()')).getText()).toBe('{"flag":true}');
-  expect(element(by.binding('$location.hash()')).getText()).toBe('hash');
+  expect(element(by.binding('$location.hash()')).getText()).toBe('');
 
 });
