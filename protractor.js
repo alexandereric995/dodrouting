@@ -5,7 +5,7 @@ it("should show fake browser info on load", function() {
   expect(addressBar.getAttribute('value')).toBe(url);
 
   expect(element(by.binding('$location.protocol()')).getText()).toBe('http');
-  expect(element(by.binding('$location.host()')).getText()).toBe('.rmp.spab.gov.mym');
+  expect(element(by.binding('$location.host()')).getText()).toBe('www.portal.gov.my.pdrm');
   expect(element(by.binding('$location.port()')).getText()).toBe('80');
   expect(element(by.binding('$location.path()')).getText()).toBe('/path');
   expect(element(by.binding('$location.search()')).getText()).toBe('{"":""}');
@@ -21,7 +21,7 @@ it("should change $location accordingly", function() {
   expect(addressBar.getAttribute('value')).toBe("https://rmp.spab.gov.my/eApps/system/index.do");
 
   expect(element(by.binding('$location.protocol()')).getText()).toBe('http');
-  expect(element(by.binding('$location.host()')).getText()).toBe('.rmp.spab.gov.my');
+  expect(element(by.binding('$location.host()')).getText()).toBe('www.portal.gov.my.pdrm');
   expect(element(by.binding('$location.port()')).getText()).toBe('80');
   expect(element(by.binding('$location.path()')).getText()).toBe('/');
   expect(element(by.binding('$location.search()')).getText()).toBe('{"":""}');
@@ -33,7 +33,7 @@ it("should change $location accordingly", function() {
   expect(addressBar.getAttribute('value')).toBe("https://rmp.spab.gov.my/eApps/system/index.do");
 
   expect(element(by.binding('$location.protocol()')).getText()).toBe('http');
-  expect(element(by.binding('$location.host()')).getText()).toBe('.rmp.spab.gov.my');
+  expect(element(by.binding('$location.host()')).getText()).toBe('www.portal.gov.my.pdrm');
   expect(element(by.binding('$location.port()')).getText()).toBe('80');
   expect(element(by.binding('$location.path()')).getText()).toBe('/sec/ond');
   expect(element(by.binding('$location.search()')).getText()).toBe('{"flag":true}');
