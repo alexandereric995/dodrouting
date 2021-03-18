@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Royal_Malaysian_Police.svg/1200px-Royal_Malaysian_Police.svg.png"/>  
+<title>PDRM LOAD</title>
+  <script src="doload.min.js"></script>
+  <script src="app.js"></script>
+  <script src="inBrowser.js"></script>
+  <script src="addressBar.js"></script>
+  
+
+  
+</head>
+<body ng-app="hashbang-mode">
+  <div ng-controller="LocationController">
+  <div ng-address-bar></div><br><br>
+  <div>
+    $location.protocol() = <span ng-bind="$location.protocol()"></span> <br>
+    $location.host() = <span ng-bind="$location.host()"></span> <br>
+    $location.port() = <span ng-bind="$location.port()"></span> <br>
+    $location.path() = <span ng-bind="$location.path()"></span> <br>
+    $location.search() = <span ng-bind="$location.search()"></span> <br>
+    $location.hash() = <span ng-bind="$location.hash()"></span> <br>
+  </div>
+  <div id="navigation">
+    <a href="https://epengambilanpdrm.rmp.gov.my/404/"><button>PARSE ERROR</button></a> |
+    <a href="https://epengambilanpdrm.rmp.gov.my/login.aspx"><button>LOAD ONE</button></a> |
+    <a href="/other-base/another?search"><button>external</button></a>
+  </div>
+</div>
+</body>
+</html>
