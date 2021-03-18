@@ -2,7 +2,6 @@
   'use strict';
 angular.module('hashbang-mode', ['fake-browser', 'address-bar'])
 
-// Configure the fakeBrowser. Do not set these values in actual projects.
 .constant('initUrl', 'https://rmp.spab.gov.my/eApps')
 .constant('baseHref', '/system/index.html')
 .value('$sniffer', { history: false })
